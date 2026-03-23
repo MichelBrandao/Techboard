@@ -22,12 +22,74 @@
     <!----------------MAIN---------------->
     <main>
         <section>
-            <h1>
-                <span>Fique de olho</span><br>no que importa
-            </h1>
-            <p>Monitoramento em tempo real com alertas inteligentes para sua aplicação nunca sair do ar sem você saber.</p>
-            <a href="#">Formulario</a>
-            <img src="img_techboard/img_techboard_desktop.png" alt="Dois celulares pretos sobrepostos, com um sombra roxa sob eles">
+            <h1><span>Formulario</span><br></h1>
+            <form action="" method="get"></form>
+            <!-- DADOS PESSOAIS -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                    <!-- Campo de texto, com preenchimento obrigatorio -->
+                    <lable for="user_name">Nome</lable>
+                    <input type="text" name = "user_name" required><br>
+
+                    <!-- Campo de email (por padrão, existe uma validação de formatação) -->
+                    <lable for="user_email">Email</lable>
+                    <input type="email" name = "user_email"><br>
+
+                    <!-- Campo de numero, com intervalo minimo e maximo -->
+                    <lable for="user_age">Idade</lable>
+                    <input type="number" name = "user_age" min="12" max="100"><br>
+
+                    <!-- Campo de data -->
+                    <lable for="user_birth">Nascimento</lable>
+                    <input type="date" name = "user_birth"><br>
+
+                    <!-- Campo de telefone, com validação de formatação e texto de ajuda -->
+                    <lable for="user_phone">Telefone</lable>
+                    <input type="tel" name = "user_phone" pattern="[0-9]{11}" placeholder="DDD+Numero"><br>
+
+                    <!-- Campo de imagem, com validação do tipo do arquivo -->
+                    <lable for="user_image"></lable>
+                    <input type="file" name = "user_image" accept="image/*">
+            </fieldset>
+            <!-- PERFIL -->
+            <fieldset>
+                <legend>Perfil</legend>
+                    <!-- Campo de seleção, com preenchimento unico (radio) -->
+                    <label>Gênero:</label>
+                        <input id="masc" type="radio" name = "user_gender" value = "Masculino">
+                        <lable for="masc">Masculino</lable>
+                        <input id="fem" type="radio" name = "user_gender" value = "Feminino">
+                        <lable for="fem">Feminino</lable><br>
+
+                <!-- Campo de seleção, com preenchimento único (lista suspensa) e obrigatório -->
+                    <lable for="status">Estado Civil</lable>
+                    <select id="status" name = "user_status" required>
+                        <option value="notInformed">Selecione…</option>
+                        <option value="casado">Casado</option>
+                        <option value="solteiro">Solteiro</option>
+                    </select>
+            </fieldset>
+            <!-- HABITOS -->
+             <fieldset>
+                    <legend>Habitos</legend>
+                    <!-- Campo de seleção, com preenchimento múltiplos (caixa de seleção) -->
+                        <label>Redes Socias:</label>
+                            <input id="insta" type="checkbox" name = "user_social" value = "Instagram">
+                            <lable for="insta">Instagram</lable>
+                            <input id="lkd" type="checkbox" name = "user_social" value = "Linkedin">
+                            <lable for="lkd">Linkedin</lable><br>
+                    <!-- Campo de seleção, com texto livre -->
+                    <lable for="music_style">Estilo Musical</lable>
+                    <input list="style_types" id="music_style" type="text" name = "user_music_style">
+                    <datalist id="style_types">
+                        <option value="Rock">
+                        <option value="Pop">
+                        <option value="Samba">
+                    </datalist><br>
+                    <!-- Campo de seleção de cores -->
+                    <lable for="fav_color">Cor Favorita</lable>
+                    <input id="fav_color" type="color" name = "user_fav_color">
+             </fieldset>
         </section>
     </main>
 
