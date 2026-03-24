@@ -84,6 +84,8 @@ fieldset{
     display: block;
     margin: 16px 320px;
     padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 fieldset legend{
@@ -94,6 +96,27 @@ button{
     margin: 0px 320px;
     padding: 8px;
     text-align: center;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="color"] {
+    width: 60px;
+    padding: 0 2px;
 }
 
 /*STYLE - TABLET*/
