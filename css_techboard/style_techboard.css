@@ -89,6 +89,12 @@ fieldset legend{
     font-size: 32px;
 }
 
+button{
+    margin: 0px 320px;
+    padding: 8px;
+    text-align: center;
+}
+
 /*STYLE - TABLET*/
 
 @media(max-width: 768px){
