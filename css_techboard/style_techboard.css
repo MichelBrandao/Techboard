@@ -79,6 +79,16 @@ section img{
     margin: 0px auto;
 }
 
+fieldset{
+    display: block;
+    margin: 16px 320px;
+    padding: 16px;
+}
+
+fieldset legend{
+    font-size: 32px;
+}
+
 /*STYLE - TABLET*/
 
 @media(max-width: 768px){
