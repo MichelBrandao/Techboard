@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
+
 <!---------------------------SETTINGS---------------------------->
 <head>
     <meta charset="UTF-8">
@@ -47,7 +47,8 @@
 
                         <!-- Campo de telefone, com validação de formatação e texto de ajuda -->
                         <lable for="user_phone">Telefone</lable>
-                        <input type="tel" name = "user_phone" pattern="[0-9]{11}" placeholder="DDD+Numero"><br>
+                        <input type="tel" name = "user_phone" pattern="[0-9]{11}" placeholder="DDD+Numero" aria-describedby="tel_help">
+                        <small id="tel_help">Preencha com 11 digitos no formato: DDD + numero sem espaços</small><br>
 
                         <!-- Campo de imagem, com validação do tipo do arquivo -->
                         <lable for="user_image"></lable>
