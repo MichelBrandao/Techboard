@@ -138,14 +138,14 @@ button{
     text-align: center;
 }
 
-button[type="reset"]:hover{
-    background-color: red;
+button[type="submit"]:hover{
+    background-color: green;
     color: #fff;
 }
 
 
 button[type="reset"]:hover{
-    background-color: green;
+    background-color: red;
     color: #fff;
 }
 
