@@ -57,6 +57,7 @@
                     <label>Gênero:</label>
                         <input id="masc" type="radio" name = "user_gender" value = "Masculino">
                         <lable for="masc">Masculino</lable>
+
                         <input id="fem" type="radio" name = "user_gender" value = "Feminino">
                         <lable for="fem">Feminino</lable><br>
 
@@ -89,6 +90,23 @@
                     <lable for="fav_color">Cor Favorita</lable>
                     <input id="fav_color" type="color" name = "user_fav_color">
              </fieldset>
+             <!-- FEEDBACK -->
+              <fieldset>
+                    <legend>Feeback</legend>
+                        <label>O que voce acha da qualidade do nosso serviço?</label><br>
+                        <input type="radio" id="otimo" name = "user_feedback" value = "otimo">
+                        <lable for="otimo">otimo</lable><br>
+
+                        <input type="radio" id="bom" name = "user_feedback" value = "bom">
+                        <lable for="bom">bom</lable><br>
+
+                        <input type="radio" id="regular" name = "user_feedback" value = "regular">
+                        <lable for="regular">regular</lable><br>
+                        
+                        <!-- Campo de texto, comentario aberto -->
+                        <lable for="comment">Escreve sua opnião:</lable><br>
+                        <textarea name="user_comment" id="comment" placeholder="Digite aqui..."></textarea>
+              </fieldset>
         </section>
     </main>
 
