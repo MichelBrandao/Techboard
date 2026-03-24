@@ -79,10 +79,13 @@ section img{
     margin: 0px auto;
 }
 
-/* T1 FORM */
+/* T1 FORM - FIELDS */
+form{
+    margin-bottom: 30px;
+}
 fieldset{
     display: block;
-    margin: 16px 320px;
+    margin: 16px 400px;
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -92,18 +95,12 @@ fieldset legend{
     font-size: 32px;
 }
 
-button{
-    margin: 0px 320px;
-    padding: 8px;
-    text-align: center;
-}
-
 input, select, textarea{
     width: 100%;
     padding: 6px;
     margin-bottom: 12px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
 textarea{
@@ -117,6 +114,39 @@ input[type="radio"], input[type="checkbox"] {
 input[type="color"] {
     width: 60px;
     padding: 0 2px;
+}
+
+/* T1 FORM - VALIDATION */
+input:invalid, select:invalid, textarea:invalid{
+    border-color: red;
+}
+
+input:valid, select:valid, textarea:valid{
+    border-color: green;
+}
+
+/* T1 FORM - BUTTONS */
+button{
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0px 400px;
+    padding: 8px;
+    text-align: center;
+}
+
+button[type="reset"]:hover{
+    background-color: red;
+    color: #fff;
+}
+
+
+button[type="reset"]:hover{
+    background-color: green;
+    color: #fff;
 }
 
 /*STYLE - TABLET*/
